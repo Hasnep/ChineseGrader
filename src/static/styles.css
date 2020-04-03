@@ -1,0 +1,27 @@
+.chinese-text {
+  font-size: 1.5em;
+}
+.level0 {
+  color: black;
+  background-color: white;
+}
+.level1 {
+  color: black;
+  background-color: greenyellow;
+}
+.level2 {
+  color: black;
+  background-color: yellow;
+}
+.level3 {
+  color: black;
+  background-color: orange;
+}
+.level4 {
+  color: white;
+  background-color: red;
+}
+.level5 {
+  color: white;
+  background-color: darkred;
+}

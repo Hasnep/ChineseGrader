@@ -1,0 +1,36 @@
+{
+  "name": "chinese-grader",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup -c --no-treeshake",
+    "watch": "npm run build -- --watch",
+    "lint": "eslint --ext '.js,.ts' src/",
+    "fix": "eslint --fix --ext '.js,.ts' src/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hasnep/chinese-grader.git"
+  },
+  "keywords": [
+    "chinese"
+  ],
+  "author": "Hannes",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^11.0.2",
+    "@rollup/plugin-json": "^4.0.2",
+    "@rollup/plugin-node-resolve": "^7.1.1",
+    "@rollup/plugin-typescript": "^4.0.0",
+    "@typescript-eslint/eslint-plugin": "^2.26.0",
+    "@typescript-eslint/parser": "^2.26.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-prefer-arrow": "^1.1.7",
+    "eslint-plugin-prettier": "^3.1.2",
+    "prettier": "^2.0.2",
+    "rollup": "^2.3.2",
+    "typescript": "^3.8.3"
+  }
+}

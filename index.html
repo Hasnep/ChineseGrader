@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8" />
+  <title></title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width" />
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous"
+  />
+
+  <link rel="stylesheet" href="src/static/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Chinese Grader</h1>
+    <form>
+      <div class="form-group">
+        <textarea
+          class="form-control px-3 py-2 chinese-text"
+          id="inputText"
+          rows="10"
+          cols="30"
+        ></textarea>
+      </div>
+    </form>
+    <div class="card px-3 py-2 chinese-text">
+      <p id="outputText"></p>
+    </div>
+  </div>
+  <script src="dist/index.js"></script>
+</body>
