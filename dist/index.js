@@ -21,10 +21,16 @@ var remove_all_children = function (element) {
         element.firstChild.remove();
     }
 };
+var make_textarea_fit_content = function (event) {
+    var element = event.target;
+    element.style.height = "";
+    element.style.height = element.scrollHeight + "px";
+};
 var get_event_value = function (event) {
     return event.target.value;
 };
 var main = function (event) {
+    make_textarea_fit_content(event);
     var inputText = get_event_value(event);
     var wordArray = split_words(inputText);
     var tocflLevelArray = wordArray.map(get_tocfl_level);

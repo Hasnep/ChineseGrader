@@ -24,11 +24,19 @@ const remove_all_children = (element: HTMLElement): void => {
   }
 };
 
+const make_textarea_fit_content = (event: Event): void => {
+  const element: HTMLElement = event.target as HTMLElement;
+  element.style.height = "";
+  element.style.height = element.scrollHeight + "px";
+};
+
 const get_event_value = (event: Event): string => {
   return (event.target as any).value;
 };
 
 const main = (event: Event): void => {
+  make_textarea_fit_content(event);
+
   const inputText: string = get_event_value(event);
 
   const wordArray = split_words(inputText);
