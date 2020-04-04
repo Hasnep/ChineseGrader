@@ -1,34 +1,63 @@
 <!DOCTYPE html>
-<head>
-  <meta charset="utf-8" />
-  <title></title>
-  <meta name="description" content="" />
-  <meta name="viewport" content="width=device-width" />
-  <link
-    rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-    crossorigin="anonymous"
-  />
-
-  <link rel="stylesheet" href="src/static/styles.css" />
-</head>
-<body>
-  <div class="container">
-    <h1>Chinese Grader</h1>
-    <form>
-      <div class="form-group">
-        <textarea
-          class="form-control px-3 py-2 chinese-text"
-          id="inputText"
-          rows="10"
-          cols="30"
-        ></textarea>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/static/styles.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <h1 class="navbar-brand">Chinese Grader</h1>
       </div>
-    </form>
-    <div class="card px-3 py-2 chinese-text">
-      <p id="outputText"></p>
+    </nav>
+    <div class="container">
+      <div class="row py-4">
+        <div class="col px-2">
+          <form>
+            <div class="form-group m-0">
+              <textarea
+                class="form-control chinese-text"
+                id="inputText"
+                rows="10"
+                cols="30"
+              ></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="col px-2">
+          <div class="card h-100 w-100 d-inline-block">
+            <div class="card-body">
+              <p id="outputText" class="chinese-text h-100 d-inline-block"></p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-  <script src="dist/index.js"></script>
-</body>
+    <footer class="footer text-center">
+      <div class="container">
+        <div class="row py-1">
+          <div class="col px-1">
+            Word data from the
+            <a href="https://www.roc-taiwan.org/at_de/post/634.html"
+              >TOCFL vocabulary list</a
+            >.
+          </div>
+          <div class="col px-1">
+            Source code on
+            <a href="https://www.github.com/hasnep/chinese-grader">GitHub</a>.
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="dist/index.js"></script>
+  </body>
+</html>
