@@ -1,12 +1,12 @@
 {
   "compilerOptions": {
-    "target": "ES5",
-    "lib": ["es6", "dom"],
-    "rootDir": "./src",
-    "resolveJsonModule": true,
-    "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "downlevelIteration": true,
+    "lib": ["es6", "dom"],
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "rootDir": "./src",
+    "target": "ES5"
   },
   "include": ["src/**/*.ts", "test/**/*.ts", "src/**/*.js"],
   "exclude": ["node_modules", "dist"]
