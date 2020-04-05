@@ -5,7 +5,8 @@
     "rootDir": "./src",
     "resolveJsonModule": true,
     "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "downlevelIteration": true,
   },
   "include": ["src/**/*.ts", "test/**/*.ts", "src/**/*.js"],
   "exclude": ["node_modules", "dist"]
