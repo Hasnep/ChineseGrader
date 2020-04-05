@@ -2,12 +2,12 @@
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
     "downlevelIteration": true,
-    "lib": ["es6", "dom"],
+    "lib": ["es2019", "dom"],
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "rootDir": "./src",
+    "rootDir": ".",
     "target": "ES5"
   },
-  "include": ["src/**/*.ts", "test/**/*.ts", "src/**/*.js"],
+  "include": ["src/**/*.ts", "test/**/*.ts"],
   "exclude": ["node_modules", "dist"]
 }
